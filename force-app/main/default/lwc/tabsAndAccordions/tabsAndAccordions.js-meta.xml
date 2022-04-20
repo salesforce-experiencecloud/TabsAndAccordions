@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Tabs and Accordions (LWR)</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="mode" type="String" label="Form Factor Mode" description="Form factor render mode and behavior. Accordion Always will render an accordion on all form factors. Tabs with Accordion on Mobile only will only render accordion on mobile and tabs on other form factors." 
+            default="Tabs with Accordion on Mobile Only" datasource="Tabs with Accordion on Mobile Only, Accordion on All Form Factors" required="true"/>
+
+            <property name="section1Label" type="String" label="Section 1 Label" description="Section 1 Label" default="Section 1" required="true"/>
+            <property name="section2Label" type="String" label="Section 2 Label" description="Section 2 Label - leave empty to hide section" default="Section 2"/>
+            <property name="section3Label" type="String" label="Section 3 Label" description="Section 3 Label - leave empty to hide section" default="Section 3"/>
+            <property name="section4Label" type="String" label="Section 4 Label" description="Section 4 Label - leave empty to hide section" default=""/>
+            <property name="section5Label" type="String" label="Section 5 Label" description="Section 5 Label - leave empty to hide section" default=""/>
+            <!-- 
+            <property name="section6Label" type="String" label="Section 6 Label" description="Section 6 Label - leave empty to hide section" default=""/>
+            <property name="section7Label" type="String" label="Section 7 Label" description="Section 7 Label - leave empty to hide section" default=""/>
+            <property name="section8Label" type="String" label="Section 8 Label" description="Section 8 Label - leave empty to hide section" default=""/>
+            <property name="section9Label" type="String" label="Section 9 Label" description="Section 9 Label - leave empty to hide section" default=""/>
+            <property name="section10Label" type="String" label="Section 10 Label" description="Section 10 Label - leave empty to hide section" default=""/>
+            -->
+
+            <property name="accordionIsActive1" type="Boolean" label="Accordion Section 1 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+            <property name="accordionIsActive2" type="Boolean" label="Accordion Section 2 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+            <property name="accordionIsActive3" type="Boolean" label="Accordion Section 3 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+            <property name="accordionIsActive4" type="Boolean" label="Accordion Section 4 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+            <property name="accordionIsActive5" type="Boolean" label="Accordion Section 5 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

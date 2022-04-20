@@ -1,0 +1,115 @@
+<template>
+    
+    <template if:true={isTabs}>
+
+        <lightning-tabset>
+
+            <c-five-tabs
+
+                hide-section1={hideSection1}
+                hide-section2={hideSection2}
+                hide-section3={hideSection3}
+                hide-section4={hideSection4}
+                hide-section5={hideSection5}
+
+                section1-label={section1Label1}
+                section2-label={section1Label2}
+                section3-label={section1Label3}
+                section4-label={section1Label4}
+                section5-label={section1Label5}
+
+            ></c-five-tabs>
+
+            <c-five-tabs
+
+                hide-section1={hideSection6}
+                hide-section2={hideSection7}
+                hide-section3={hideSection8}
+                hide-section4={hideSection9}
+                hide-section5={hideSection10}
+
+                section1-label={section1Label6}
+                section2-label={section1Label7}
+                section3-label={section1Label8}
+                section4-label={section1Label9}
+                section5-label={section1Label10}
+
+            ></c-five-tabs>
+            
+
+        </lightning-tabset>
+
+    </template>
+
+
+    <template if:false={isTabs}>
+
+        <lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+           
+            <template if:false={hideSection1}>
+                <lightning-accordion-section name="section1" label={section1Label}>
+                    <slot name="section1Slot"></slot>  
+                </lightning-accordion-section>
+            </template>
+
+            <template if:false={hideSection2}>
+                <lightning-accordion-section name="section2" label={section2Label}>
+                    <slot name="section2Slot"></slot>  
+                </lightning-accordion-section>
+            </template>
+
+            <template if:false={hideSection3}>
+                <lightning-accordion-section name="section3" label={section3Label}>
+                    <slot name="section3Slot"></slot>  
+                </lightning-accordion-section>
+            </template>
+
+            <template if:false={hideSection4}>
+                <lightning-accordion-section name="section4" label={section4Label}>
+                    <slot name="section4Slot"></slot>  
+                </lightning-accordion-section>
+            </template>
+
+            <template if:false={hideSection5}>
+                <lightning-accordion-section name="section5" label={section5Label}>
+                    <slot name="section5Slot"></slot>  
+                </lightning-accordion-section>
+            </template>
+
+            <!--
+            <template if:false={hideSection6}>
+                <lightning-accordion-section name="section6" label={section6Label}>
+                    <slot name="section6Slot"></slot>  
+                </lightning-accordion-section>
+            </template>
+
+            <template if:false={hideSection7}>
+                <lightning-accordion-section name="section7" label={section7Label}>
+                    <slot name="section7Slot"></slot>  
+                </lightning-accordion-section>
+            </template>
+
+            <template if:false={hideSection8}>
+                <lightning-accordion-section name="section8" label={section8Label}>
+                    <slot name="section8Slot"></slot>  
+                </lightning-accordion-section>
+            </template>
+
+            <template if:false={hideSection9}>
+                <lightning-accordion-section name="section9" label={section9Label}>
+                    <slot name="section9Slot"></slot>  
+                </lightning-accordion-section>
+            </template>
+
+            <template if:false={hideSection10}>
+                <lightning-accordion-section name="section10" label={section10Label}>
+                    <slot name="section10Slot"></slot>  
+                </lightning-accordion-section>
+            </template>
+            -->
+
+        </lightning-accordion>
+
+    </template>
+    
+</template>
