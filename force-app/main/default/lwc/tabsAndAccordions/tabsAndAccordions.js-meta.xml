@@ -9,8 +9,8 @@
     </targets>
     <targetConfigs>
         <targetConfig targets="lightningCommunity__Default">
-            <property name="mode" type="String" label="Form Factor Mode" description="Form factor render mode and behavior. Accordion Always will render an accordion on all form factors. Tabs with Accordion on Mobile only will only render accordion on mobile and tabs on other form factors." 
-            default="Tabs with Accordion on Mobile Only" datasource="Tabs with Accordion on Mobile Only, Accordion on All Form Factors" required="true"/>
+            <property name="mode" type="String" label="Render Mode" description="Form factor render mode and behavior. Tabs and Accordion will render the same on all form factors. Tabs w/ Accordion on Mobile will only render accordion on mobile and tabs on other form factors." 
+            default="Tabs" datasource="Tabs, Accordion, Tabs w/ Accordion on Mobile" required="true"/>
 
             <property name="section1Label" type="String" label="Section 1 Label" description="Section 1 Label" default="Section 1" required="true"/>
             <property name="section2Label" type="String" label="Section 2 Label" description="Section 2 Label - leave empty to hide section" default="Section 2"/>

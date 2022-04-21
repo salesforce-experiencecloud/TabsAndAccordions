@@ -1,6 +1,6 @@
 import { LightningElement, api } from 'lwc';
 
-const tabsWithAccordionOnMobile = 'Tabs with Accordion on Mobile Only';
+const tabsWithAccordionOnMobile = 'Tabs w/ Accordion on Mobile';
 
 /**
  * @slot section1Slot
@@ -42,7 +42,7 @@ export default class TabsAndAccordions extends LightningElement {
 
     activeSections = [];
 
-    @api mode = tabsWithAccordionOnMobile;
+    @api mode = 'Tabs';
 
     get hideSection1() {
         return this.isEmptyString(this.section1Label);
@@ -78,7 +78,7 @@ export default class TabsAndAccordions extends LightningElement {
     
 
     get isTabs() {
-        return (this.mode === tabsWithAccordionOnMobile && this.isMobile() === false);
+        return (this.mode === 'Tabs' || (this.mode === tabsWithAccordionOnMobile && this.isMobile() === false));
     }
 
     connectedCallback()
