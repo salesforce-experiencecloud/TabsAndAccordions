@@ -1,31 +1,31 @@
 <template>
     <template if:false={hideSection1}>
-        <lightning-tab label={section1Label}> 
+        <c-tab label={section1Label}> 
             <slot name="section1Slot"></slot>    
-        </lightning-tab>
+        </c-tab>
     </template>
 
     <template if:false={hideSection2}>
-        <lightning-tab label={section2Label}>
+        <c-tab label={section2Label}>
             <slot name="section2Slot"></slot>  
-        </lightning-tab>
+        </c-tab>
     </template>
 
     <template if:false={hideSection3}>
-        <lightning-tab label={section3Label}> 
+        <c-tab label={section3Label}> 
             <slot name="section3Slot"></slot>      
-        </lightning-tab>
+        </c-tab>
     </template>
 
     <template if:false={hideSection4}>
-        <lightning-tab label={section4Label}> 
+        <c-tab label={section4Label}> 
             <slot name="section4Slot"></slot>      
-        </lightning-tab>
+        </c-tab>
     </template>
 
     <template if:false={hideSection5}>
-        <lightning-tab label={section5Label}> 
+        <c-tab label={section5Label}> 
             <slot name="section5Slot"></slot>      
-        </lightning-tab>
+        </c-tab>
     </template>
 </template>

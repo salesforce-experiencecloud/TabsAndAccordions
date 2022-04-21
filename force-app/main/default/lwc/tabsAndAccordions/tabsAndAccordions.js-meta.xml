@@ -17,19 +17,24 @@
             <property name="section3Label" type="String" label="Section 3 Label" description="Section 3 Label - leave empty to hide section" default="Section 3"/>
             <property name="section4Label" type="String" label="Section 4 Label" description="Section 4 Label - leave empty to hide section" default=""/>
             <property name="section5Label" type="String" label="Section 5 Label" description="Section 5 Label - leave empty to hide section" default=""/>
-            <!-- 
+            
             <property name="section6Label" type="String" label="Section 6 Label" description="Section 6 Label - leave empty to hide section" default=""/>
             <property name="section7Label" type="String" label="Section 7 Label" description="Section 7 Label - leave empty to hide section" default=""/>
             <property name="section8Label" type="String" label="Section 8 Label" description="Section 8 Label - leave empty to hide section" default=""/>
             <property name="section9Label" type="String" label="Section 9 Label" description="Section 9 Label - leave empty to hide section" default=""/>
             <property name="section10Label" type="String" label="Section 10 Label" description="Section 10 Label - leave empty to hide section" default=""/>
-            -->
+            
 
             <property name="accordionIsActive1" type="Boolean" label="Accordion Section 1 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
             <property name="accordionIsActive2" type="Boolean" label="Accordion Section 2 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
             <property name="accordionIsActive3" type="Boolean" label="Accordion Section 3 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
             <property name="accordionIsActive4" type="Boolean" label="Accordion Section 4 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
             <property name="accordionIsActive5" type="Boolean" label="Accordion Section 5 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+            <property name="accordionIsActive6" type="Boolean" label="Accordion Section 6 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+            <property name="accordionIsActive7" type="Boolean" label="Accordion Section 7 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+            <property name="accordionIsActive8" type="Boolean" label="Accordion Section 8 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+            <property name="accordionIsActive9" type="Boolean" label="Accordion Section 9 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+            <property name="accordionIsActive10" type="Boolean" label="Accordion Section 10 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

@@ -8,6 +8,11 @@ const tabsWithAccordionOnMobile = 'Tabs with Accordion on Mobile Only';
  * @slot section3Slot
  * @slot section4Slot
  * @slot section5Slot
+ * @slot section6Slot
+ * @slot section7Slot
+ * @slot section8Slot
+ * @slot section9Slot
+ * @slot section10Slot
  */
 export default class TabsAndAccordions extends LightningElement {
 
@@ -29,6 +34,11 @@ export default class TabsAndAccordions extends LightningElement {
     @api accordionIsActive3 = false;
     @api accordionIsActive4 = false;
     @api accordionIsActive5 = false;
+    @api accordionIsActive6 = false;
+    @api accordionIsActive7 = false;
+    @api accordionIsActive8 = false;
+    @api accordionIsActive9 = false;
+    @api accordionIsActive10 = false;
 
     activeSections = [];
 
@@ -96,6 +106,31 @@ export default class TabsAndAccordions extends LightningElement {
         if(this.accordionIsActive5)
         {
             this.activeSections.push('section5');
+        }
+
+        if(this.accordionIsActive6)
+        {
+            this.activeSections.push('section6');
+        }
+
+        if(this.accordionIsActive7)
+        {
+            this.activeSections.push('section7');
+        }
+
+        if(this.accordionIsActive8)
+        {
+            this.activeSections.push('section8');
+        }
+
+        if(this.accordionIsActive9)
+        {
+            this.activeSections.push('section9');
+        }
+
+        if(this.accordionIsActive10)
+        {
+            this.activeSections.push('section10');
         }
     }
 
