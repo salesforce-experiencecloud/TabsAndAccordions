@@ -393,9 +393,13 @@ export default class cTabBar extends LightningElement {
             return;
         }
 
-        const containerWidth =
+        let containerWidth =
             this.getBoundingClientRect().width -
             RECOMPUTE_OVERFLOW_THRESHOLD_PX;
+        
+        //containerWidth = (window.screen.width < containerWidth) ? window.screen.width : containerWidth; 
+
+        
 
         const tabHeaderElements = this.template.querySelectorAll('[data-tab]');
         for (let i = 0; i < tabHeaderElements.length; i++) {
@@ -429,6 +433,8 @@ export default class cTabBar extends LightningElement {
         });
         this._hasOverflow =
             overflowData.overflowItems && overflowData.overflowItems.length > 0;
+
+        //this.template.querySelector('[role="tablist"]').style.setProperty(('max-width',containerWidth - overflowElement.getBoundingClientRect().width - 30) + 'px');
 
         overflowData.visibleItems.forEach((overflowItem) => {
             if (!overflowItem.visible) {

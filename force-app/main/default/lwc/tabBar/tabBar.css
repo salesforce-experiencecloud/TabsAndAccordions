@@ -1,3 +1,10 @@
+/*.navDiv {
+    width: 100%;
+    display: inline-flex
+}*/
 ul {
-    width: 100vw;
+    display: block;
+}
+li.slds-tabs_default__item {
+    display: inline-flex;
 }
