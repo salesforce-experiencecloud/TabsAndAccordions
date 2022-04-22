@@ -1,18 +1,9 @@
-# Salesforce DX Project: Next Steps
+# Tabs and Accordions for Experience Cloud (LWR)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+![image](https://user-images.githubusercontent.com/8514282/164614828-57b53cc8-27cf-46c7-85ff-67145be4ec11.png)
 
-## How Do You Plan to Deploy Your Changes?
+## Description:
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+LWR-only Experience Builder component that renders up to 10 tabs or accordion sections with drag/droppable regions. Take control of your LWR site’s layout with this component that allows you to add content to up to 10 tabs or accordion sections! Build the best experience for your site users!
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+[Click here for More Info / Documentation] (https://salesforce.quip.com/Fp5dAKtaOl9k)
