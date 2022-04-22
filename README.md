@@ -6,4 +6,4 @@
 
 LWR-only Experience Builder component that renders up to 10 tabs or accordion sections with drag/droppable regions. Take control of your LWR site’s layout with this component that allows you to add content to up to 10 tabs or accordion sections! Build the best experience for your site users!
 
-[Click here for More Info / Documentation] (https://salesforce.quip.com/Fp5dAKtaOl9k)
+[Click here for More Info / Documentation](https://salesforce.quip.com/Fp5dAKtaOl9k)
