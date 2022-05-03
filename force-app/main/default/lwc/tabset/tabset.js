@@ -17,8 +17,11 @@ const tabClassPrefixByVariant = {
 
 export default class cTabset extends LightningElement {
     @api title;
+    @api overflowMoreText = 'More';
 
     @track _variant = 'standard';
+
+    @api disableOverflow = false;
 
     connectedCallback() {
         this._tabByValue = {};

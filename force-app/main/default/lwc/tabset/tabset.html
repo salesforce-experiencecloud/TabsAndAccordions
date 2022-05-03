@@ -12,7 +12,8 @@
         onprivatetabregister={handleTabRegister}
         onprivatetabdatachange={handleTabDataChange}
     >
-        <c-tab-bar variant={variant} onselect={handleTabSelected}></c-tab-bar>
+        <c-tab-bar variant={variant} onselect={handleTabSelected} disable-overflow={disableOverflow} overflow-more-text={overflowMoreText}></c-tab-bar>
+        <div class="slds-m-bottom_x-small"></div>
         <slot></slot>
     </div>
 </template>

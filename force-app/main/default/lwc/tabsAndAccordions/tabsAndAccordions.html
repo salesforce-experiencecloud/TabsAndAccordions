@@ -2,7 +2,7 @@
     
     <template if:true={isTabs}>
 
-        <c-tabset>
+        <c-tabset disable-overflow={disableOverflow} overflow-more-text={overflowMoreText}>
             
             <template if:false={hideSection1}>
                 <c-tab label={section1Label}> 

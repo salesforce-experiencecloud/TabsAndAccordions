@@ -79,11 +79,11 @@
             >
                 <c-button-menu
                     variant="bare"
-                    alternative-text={i18n.moreAlternativeText}
-                    title={i18n.moreTitle}
+                    alternative-text={overflowMoreText}
+                    title={overflowMoreText}
                     onselect={handleOverflowSelect}
                     icon-name="utility:chevrondown"
-                    label={i18n.more}
+                    label={overflowMoreText}
                     menu-alignment="right"
                 >
                     <template for:each={_allTabs} for:item="tab">
@@ -99,4 +99,5 @@
             </li>
         </template>
     </ul>
+    <hr class="bottomBorder" if:true={disableOverflow}>
 </template>

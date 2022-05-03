@@ -1,10 +1,32 @@
-/*.navDiv {
-    width: 100%;
-    display: inline-flex
-}*/
+
+.tabBarWrapper {
+    display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  padding-bottom: 1.2rem;
+  border-bottom: 0 !important;
+  -webkit-overflow-scrolling: touch;
+  max-width: 87vw;
+  position: relative;
+
+}
+
+
+.tabBarWrapper .tabBarSubWrapper {
+    flex: 0 0 auto;
+}
+
+
 ul {
     display: block;
 }
 li.slds-tabs_default__item {
     display: inline-flex;
+}
+
+hr.bottomBorder {
+    border-color: var(--slds-c-tabs-list-color-border,var(--sds-c-tabs-list-color-border,var(--dxp-g-brand,#e5e5e5))) !important;
+    margin: 0;
+    margin-top: -1.2rem;
 }

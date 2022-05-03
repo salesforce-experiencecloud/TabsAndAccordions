@@ -24,6 +24,8 @@
             <property name="section9Label" type="String" label="Section 9 Label" description="Section 9 Label - leave empty to hide section" default=""/>
             <property name="section10Label" type="String" label="Section 10 Label" description="Section 10 Label - leave empty to hide section" default=""/>
             
+            <property name="disableOverflow" type="Boolean" label="Disable Overflow for Tabs" description="When checked, tabs will have horizontal scrolling. When unchecked, tabs will overflow into a menu." default="false"/>
+            <property name="overflowMoreText" type="String" label="Overflow 'More' Menu Label" description="Label for overflow 'More' Menu" default="More"/>
 
             <property name="accordionIsActive1" type="Boolean" label="Accordion Section 1 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
             <property name="accordionIsActive2" type="Boolean" label="Accordion Section 2 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>

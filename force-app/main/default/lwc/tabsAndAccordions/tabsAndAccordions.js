@@ -47,6 +47,9 @@ export default class TabsAndAccordions extends LightningElement {
     @api accordionIsActive9 = false;
     @api accordionIsActive10 = false;
 
+    @api disableOverflow = false;
+    @api overflowMoreText = 'More';
+
     activeSections = [];
 
     @api mode = 'Tabs';

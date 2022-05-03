@@ -28,6 +28,7 @@ const RECOMPUTE_OVERFLOW_THRESHOLD_PX = 30;
 
 export default class cTabBar extends LightningElement {
     @api disableOverflow = false;
+    @api overflowMoreText = 'More';
 
     @track _allTabs = [];
     @track _hasOverflow = false;
@@ -193,11 +194,13 @@ export default class cTabBar extends LightningElement {
     get computedListClass() {
         const isScoped = this._variant === 'scoped';
         const isVertical = this.isVerticalVariant;
+        const isOverflowDisabled = this.disableOverflow;
         return classSet()
             .add({
                 'slds-tabs_scoped__nav': isScoped,
                 'slds-vertical-tabs__nav': isVertical,
-                'slds-tabs_default__nav': !isScoped && !isVertical
+                'slds-tabs_default__nav': !isScoped && !isVertical,
+                'tabBarWrapper': isOverflowDisabled
             })
             .toString();
     }
@@ -331,13 +334,15 @@ export default class cTabBar extends LightningElement {
     _tabClass({ selected = false, hasFocus = false }) {
         const isScopedVariant = this._variant === 'scoped';
         const isVertical = this.isVerticalVariant;
+        const isOverflowDisabled = this.disableOverflow;
         return classSet()
             .add({
                 'slds-tabs_default__item': !isScopedVariant && !isVertical,
                 'slds-tabs_scoped__item': isScopedVariant,
                 'slds-vertical-tabs__nav-item': isVertical,
                 'slds-is-active': selected,
-                'slds-has-focus': hasFocus
+                'slds-has-focus': hasFocus,
+                'tabBarSubWrapper': isOverflowDisabled
             })
             .toString();
     }
