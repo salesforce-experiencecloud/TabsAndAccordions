@@ -5,7 +5,7 @@
  * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
 
-import { LightningElement, api } from 'lwc';
+import { LightningElement, api, track } from 'lwc';
 
 const tabsWithAccordionOnMobile = 'Tabs w/ Accordion on Mobile';
 
@@ -54,6 +54,8 @@ export default class TabsAndAccordions extends LightningElement {
 
     @api mode = 'Tabs';
 
+    @track isAura = false;
+
     get hideSection1() {
         return this.isEmptyString(this.section1Label);
     }
@@ -93,6 +95,12 @@ export default class TabsAndAccordions extends LightningElement {
 
     connectedCallback()
     {
+
+        if(window['$A'] !== undefined && window['$A'] !== null) //aura runtime
+        {
+            this.isAura = true;
+        }
+
         if(this.accordionIsActive1)
         {
             this.activeSections.push('section1');

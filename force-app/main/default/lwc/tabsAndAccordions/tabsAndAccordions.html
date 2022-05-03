@@ -1,142 +1,149 @@
 <template>
-    
-    <template if:true={isTabs}>
+    <template if:false={isAura}>
 
-        <c-tabset disable-overflow={disableOverflow} overflow-more-text={overflowMoreText}>
+        <template if:true={isTabs}>
+
+            <c-tabset disable-overflow={disableOverflow} overflow-more-text={overflowMoreText}>
+                
+                <template if:false={hideSection1}>
+                    <c-tab label={section1Label}> 
+                        <slot name="section1Slot"></slot> 
+                    </c-tab>
+                </template>
+
+                <template if:false={hideSection2}>
+                    <c-tab label={section2Label}> 
+                        <slot name="section2Slot"></slot> 
+                    </c-tab>
+                </template>
+
+                <template if:false={hideSection3}>
+                    <c-tab label={section3Label}> 
+                        <slot name="section3Slot"></slot> 
+                    </c-tab>
+                </template>
+
+                <template if:false={hideSection4}>
+                    <c-tab label={section4Label}> 
+                        <slot name="section4Slot"></slot> 
+                    </c-tab>
+                </template>
+
+                <template if:false={hideSection5}>
+                    <c-tab label={section5Label}> 
+                        <slot name="section5Slot"></slot> 
+                    </c-tab>
+                </template>
+
+                <template if:false={hideSection6}>
+                    <c-tab label={section6Label}> 
+                        <slot name="section6Slot"></slot> 
+                    </c-tab>
+                </template>
+
+                <template if:false={hideSection7}>
+                    <c-tab label={section7Label}> 
+                        <slot name="section7Slot"></slot> 
+                    </c-tab>
+                </template>
+
+                <template if:false={hideSection8}>
+                    <c-tab label={section8Label}> 
+                        <slot name="section8Slot"></slot> 
+                    </c-tab>
+                </template>
+
+                <template if:false={hideSection9}>
+                    <c-tab label={section9Label}> 
+                        <slot name="section9Slot"></slot> 
+                    </c-tab>
+                </template>
+
+                <template if:false={hideSection10}>
+                    <c-tab label={section10Label}> 
+                        <slot name="section10Slot"></slot> 
+                    </c-tab>
+                </template>
+
+            </c-tabset>
+
+        </template>
+
+
+        <template if:false={isTabs}>
+
+            <c-accordion allow-multiple-sections-open active-section-name={activeSections}>
             
-            <template if:false={hideSection1}>
-                <c-tab label={section1Label}> 
-                    <slot name="section1Slot"></slot> 
-                </c-tab>
-            </template>
+                <template if:false={hideSection1}>
+                    <c-accordion-section name="section1" label={section1Label}>
+                        <slot name="section1Slot"></slot>  
+                    </c-accordion-section>
+                </template>
 
-            <template if:false={hideSection2}>
-                <c-tab label={section2Label}> 
-                    <slot name="section2Slot"></slot> 
-                </c-tab>
-            </template>
+                <template if:false={hideSection2}>
+                    <c-accordion-section name="section2" label={section2Label}>
+                        <slot name="section2Slot"></slot>  
+                    </c-accordion-section>
+                </template>
 
-            <template if:false={hideSection3}>
-                <c-tab label={section3Label}> 
-                    <slot name="section3Slot"></slot> 
-                </c-tab>
-            </template>
+                <template if:false={hideSection3}>
+                    <c-accordion-section name="section3" label={section3Label}>
+                        <slot name="section3Slot"></slot>  
+                    </c-accordion-section>
+                </template>
 
-            <template if:false={hideSection4}>
-                <c-tab label={section4Label}> 
-                    <slot name="section4Slot"></slot> 
-                </c-tab>
-            </template>
+                <template if:false={hideSection4}>
+                    <c-accordion-section name="section4" label={section4Label}>
+                        <slot name="section4Slot"></slot>  
+                    </c-accordion-section>
+                </template>
 
-            <template if:false={hideSection5}>
-                <c-tab label={section5Label}> 
-                    <slot name="section5Slot"></slot> 
-                </c-tab>
-            </template>
+                <template if:false={hideSection5}>
+                    <c-accordion-section name="section5" label={section5Label}>
+                        <slot name="section5Slot"></slot>  
+                    </c-accordion-section>
+                </template>
 
-            <template if:false={hideSection6}>
-                <c-tab label={section6Label}> 
-                    <slot name="section6Slot"></slot> 
-                </c-tab>
-            </template>
+                
+                <template if:false={hideSection6}>
+                    <c-accordion-section name="section6" label={section6Label}>
+                        <slot name="section6Slot"></slot>  
+                    </c-accordion-section>
+                </template>
 
-            <template if:false={hideSection7}>
-                <c-tab label={section7Label}> 
-                    <slot name="section7Slot"></slot> 
-                </c-tab>
-            </template>
+                <template if:false={hideSection7}>
+                    <c-accordion-section name="section7" label={section7Label}>
+                        <slot name="section7Slot"></slot>  
+                    </c-accordion-section>
+                </template>
 
-            <template if:false={hideSection8}>
-                <c-tab label={section8Label}> 
-                    <slot name="section8Slot"></slot> 
-                </c-tab>
-            </template>
+                <template if:false={hideSection8}>
+                    <c-accordion-section name="section8" label={section8Label}>
+                        <slot name="section8Slot"></slot>  
+                    </c-accordion-section>
+                </template>
 
-            <template if:false={hideSection9}>
-                <c-tab label={section9Label}> 
-                    <slot name="section9Slot"></slot> 
-                </c-tab>
-            </template>
+                <template if:false={hideSection9}>
+                    <c-accordion-section name="section9" label={section9Label}>
+                        <slot name="section9Slot"></slot>  
+                    </c-accordion-section>
+                </template>
 
-            <template if:false={hideSection10}>
-                <c-tab label={section10Label}> 
-                    <slot name="section10Slot"></slot> 
-                </c-tab>
-            </template>
+                <template if:false={hideSection10}>
+                    <c-accordion-section name="section10" label={section10Label}>
+                        <slot name="section10Slot"></slot>  
+                    </c-accordion-section>
+                </template>
+                
 
-        </c-tabset>
+            </c-accordion>
+
+        </template>
 
     </template>
-
-
-    <template if:false={isTabs}>
-
-        <c-accordion allow-multiple-sections-open active-section-name={activeSections}>
-           
-            <template if:false={hideSection1}>
-                <c-accordion-section name="section1" label={section1Label}>
-                    <slot name="section1Slot"></slot>  
-                </c-accordion-section>
-            </template>
-
-            <template if:false={hideSection2}>
-                <c-accordion-section name="section2" label={section2Label}>
-                    <slot name="section2Slot"></slot>  
-                </c-accordion-section>
-            </template>
-
-            <template if:false={hideSection3}>
-                <c-accordion-section name="section3" label={section3Label}>
-                    <slot name="section3Slot"></slot>  
-                </c-accordion-section>
-            </template>
-
-            <template if:false={hideSection4}>
-                <c-accordion-section name="section4" label={section4Label}>
-                    <slot name="section4Slot"></slot>  
-                </c-accordion-section>
-            </template>
-
-            <template if:false={hideSection5}>
-                <c-accordion-section name="section5" label={section5Label}>
-                    <slot name="section5Slot"></slot>  
-                </c-accordion-section>
-            </template>
-
-            
-            <template if:false={hideSection6}>
-                <c-accordion-section name="section6" label={section6Label}>
-                    <slot name="section6Slot"></slot>  
-                </c-accordion-section>
-            </template>
-
-            <template if:false={hideSection7}>
-                <c-accordion-section name="section7" label={section7Label}>
-                    <slot name="section7Slot"></slot>  
-                </c-accordion-section>
-            </template>
-
-            <template if:false={hideSection8}>
-                <c-accordion-section name="section8" label={section8Label}>
-                    <slot name="section8Slot"></slot>  
-                </c-accordion-section>
-            </template>
-
-            <template if:false={hideSection9}>
-                <c-accordion-section name="section9" label={section9Label}>
-                    <slot name="section9Slot"></slot>  
-                </c-accordion-section>
-            </template>
-
-            <template if:false={hideSection10}>
-                <c-accordion-section name="section10" label={section10Label}>
-                    <slot name="section10Slot"></slot>  
-                </c-accordion-section>
-            </template>
-            
-
-        </c-accordion>
-
-    </template>
     
+    <template if:true={isAura}>
+        <p class="slds-notify slds-notify_alert slds-alert_error">This component is not compatible with Aura runtime.</p>
+    </template>
+
 </template>
