@@ -51,7 +51,11 @@ export default class TabsAndAccordions extends LightningElement {
     @api disableOverflow = false;
     @api overflowMoreText = 'More';
 
+    @api uniqueEventId;
+
     activeSections = [];
+    expandAllListener;
+    collapsAllListener;
 
     @api mode = 'Tabs';
 
@@ -149,6 +153,57 @@ export default class TabsAndAccordions extends LightningElement {
 
         if(this.accordionIsActive10)
         {
+            this.activeSections.push('section10');
+        }
+
+        this.expandAllListener = this.handleExpandAll.bind(this);
+        window.addEventListener(
+            'expandall',
+            this.expandAllListener
+        );
+
+        this.collapseAllListener = this.handleCollapseAll.bind(this);
+        window.addEventListener(
+            'collapseall',
+            this.collapseAllListener
+        );
+
+    }
+
+    disconnectedCallback()
+    {
+        window.removeEventListener(
+            'expandall',
+            this.expandAllListener
+        );
+        window.removeEventListener(
+            'collapseall',
+            this.collapseAllListener
+        );
+    }
+
+    handleCollapseAll(event) 
+    {
+        if(this.isEmptyString(this.uniqueEventId) === false && event.detail.identifiers.includes(this.uniqueEventId) === true)
+        {
+            this.activeSections = [];
+        }
+    }
+
+    handleExpandAll(event) 
+    {
+        if(this.isEmptyString(this.uniqueEventId) === false && event.detail.identifiers.includes(this.uniqueEventId) === true)
+        {
+            this.activeSections = [];
+            this.activeSections.push('section1');
+            this.activeSections.push('section2');
+            this.activeSections.push('section3');
+            this.activeSections.push('section4');
+            this.activeSections.push('section5');
+            this.activeSections.push('section6');
+            this.activeSections.push('section7');
+            this.activeSections.push('section8');
+            this.activeSections.push('section9');
             this.activeSections.push('section10');
         }
     }

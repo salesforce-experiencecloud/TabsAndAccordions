@@ -40,6 +40,9 @@
             <property name="accordionIsActive8" type="Boolean" label="Accordion Section 8 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
             <property name="accordionIsActive9" type="Boolean" label="Accordion Section 9 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
             <property name="accordionIsActive10" type="Boolean" label="Accordion Section 10 Expanded by Default" description="For Accordion, check to have section expanded by default" default="false"/>
+
+            <property name="uniqueEventId" type="String" label="Unique Event Id" description="Use to control custom events like expand / collapse all" default=""/>
+
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
